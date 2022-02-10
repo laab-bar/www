@@ -1,0 +1,6 @@
+.DS_Store
+/vendor
+/.jekyll-cache
+/_site
+/.envrc
+/shell.nix
