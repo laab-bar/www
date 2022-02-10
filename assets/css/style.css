@@ -98,12 +98,13 @@ html, body {
 }
 
 div.logo {
-
+    padding: 50px 0px;
 }
 
 div.logo img {
-    max-width: 60%;
+    max-width: 35%;
     filter: drop-shadow(0px 0px 10px #222);
+    z-index: 10;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -124,6 +125,35 @@ div.logo img {
     }
 }
 
+div.lines {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+div.curve {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('/assets/images/elements-curve.png');
+    background-position: center bottom;
+    background-size: 625px;
+    background-repeat: no-repeat;
+}
+
+div.straight {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('/assets/images/elements-straight.png');
+    background-position: center top;
+    background-size: 150px;
+    background-repeat: repeat-y;
+}
+
 img.icon {
     display: inline-block;
     height: 30px;
@@ -137,6 +167,7 @@ img.icon {
 
 .address {
     margin-top: 20px;
+    z-index: 10;
     font-size: 120%;
     //font-family: Excalibur Nouveau;
     //font-style: italic;
@@ -145,6 +176,7 @@ img.icon {
 
 .social {
     margin-top: 20px;
+    z-index: 10;
     font-size: 200%;
 }
 
